@@ -1,0 +1,341 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+@font-face {
+  font-family: PingFangSC-Regular;
+  src: url("../font/PingFang-Regular.ttf");
+}
+
+@font-face {
+  font-family: PingFangSC-Medium;
+  src: url("../font/PingFang-Medium.ttf");
+}
+
+@font-face {
+  font-family: PingFangSC-Semibold;
+  src: url("../font/PingFang-Bold.ttf");
+}
+
+.top {
+  height: 1.333333rem;
+  line-height: 1.333333rem;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0.013333rem 0.026667rem 0 rgba(125, 125, 125, 0.25);
+}
+
+.top .back {
+  flex: 1;
+  margin-left: 0.293333rem;
+}
+
+.top .back img {
+  vertical-align: middle;
+}
+
+.top .register {
+  flex: 1;
+  text-align: right;
+  font-size: 0.186667rem;
+  color: #232323;
+  margin-right: 0.4rem;
+}
+
+.top h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 0.226667rem;
+}
+
+.language .en {
+  display: none;
+}
+
+.account_info {
+  background-color: #F2F2F2;
+  height: 1.333333rem;
+  position: relative;
+}
+
+.account_info h2 {
+  color: #F2F2F2;
+  font-size: 0.186667rem;
+  padding: 0.133333rem 0 0 0.28rem;
+}
+
+.account_info .price {
+  font-size: 0;
+  margin-left: 0.28rem;
+  margin-top: 0.2rem;
+}
+
+.account_info .price p {
+  display: inline-block;
+  color: #848484;
+  font-size: 0.133333rem;
+  margin-right: 0.066667rem;
+}
+
+.account_info img {
+  position: absolute;
+  right: 0.413333rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tab .tab_top {
+  width: 9.2rem;
+  height: 1.466667rem;
+  padding: 0.266667rem 0;
+  margin-left: 0.4rem;
+  box-sizing: border-box;
+}
+
+.tab .hd {
+  width: 9.2rem;
+  height: 0.933333rem;
+  font-size: 0;
+  border: 0.013333rem solid #009943;
+}
+
+.tab .hd p {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 0.186667rem;
+  color: #232323;
+  width: 50%;
+  text-align: center;
+  line-height: 0.933333rem;
+  height: 0.933333rem;
+}
+
+.tab .hd p.active {
+  background-color: #009943;
+  color: #fff;
+}
+
+.tab .bd .column {
+  display: none;
+}
+
+.tab .bd .column.column_0_hook {
+  display: block;
+}
+
+.tab .bd .column .item {
+  width: 9.2rem;
+  margin: 0.266667rem auto 0;
+  display: flex;
+}
+
+.tab .bd .column .item .pic {
+  width: 1.066667rem;
+  height: 1.066667rem;
+  flex: 0 0 1.066667rem;
+  background-size: 1.066667rem 1.066667rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/wallet_gw.png");
+}
+
+.tab .bd .column .item .desc {
+  flex: 1;
+  margin-left: 0.36rem;
+  border-bottom: 0.013333rem solid #e1e1e1;
+  padding-bottom: 0.24rem;
+}
+
+.tab .bd .column .item .desc h2 {
+  color: #232323;
+  font-size: 0.186667rem;
+}
+
+.tab .bd .column .item .desc p:nth-child(2) {
+  color: #232323;
+  font-size: 0.133333rem;
+  margin: 0.133333rem 0 0.106667rem;
+}
+
+.tab .bd .column .item .desc p:nth-child(3) {
+  color: #848484;
+  font-size: 0.133333rem;
+}
+
+.tab .bd .column .item .price {
+  font-size: 0.186667rem;
+  color: #232323;
+  line-height: 1.2rem;
+  border-bottom: 0.013333rem solid #e1e1e1;
+  padding-bottom: 0.24rem;
+}
+
+.wrapper {
+  height: 13.653333rem;
+  overflow: hidden;
+}
+
+.scroll_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  visibility: hidden;
+}
+
+.refer img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+  animation: spin 8000ms infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

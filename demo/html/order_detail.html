@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title class="zn">订单详情</title>
+    <title class="en">Home</title>
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/order_detail.css">
+    <script src="../js/common/base.js"></script>
+</head>
+
+<body>
+    <div class="order_box">
+        <!--顶部-->
+        <diV class="navigation">
+            <span>订单详情</span>
+            <a href="./order_all.html"><img src="../images/general_return.png"></a>
+        </diV>
+        <!---->
+        <div class="order_content">
+            <!-- 待收货 -->
+            <div class="order_head">
+                <div class="title">
+                </div>
+                <div class="img">
+                </div>
+            </div>
+            <div class="order_item">
+                <!--地址-->
+                <div class="address">
+                    <div class="img"><img src="../images/shop_loca.png" alt=""></div>
+                    <div class="detail">
+                    </div>
+                </div>
+                <div class="shopproC">
+                    <div class="shopsC"></div>
+                    <!--商铺-->
+                    <div class="shop">
+                    </div>
+                    <!--商品-->
+                    <div class="prolist">
+                    </div>
+
+                    <!--商品总价-->
+                    <div class="shop_det">
+                        <div class="total"><span>商品总价</span><span class="price">¥99.00</span></div>
+                        <!--运费-->
+                        <div class="pass"><span>运费</span><span>用户自提</span></div>
+                        <!--现金支付-->
+                        <div class="cash"><span>现金支付</span><span>¥99.00</span></div>
+                        <!--积分支付-->
+                        <div class="integral"><span>积分支付</span><span>1000.00分</span></div>
+                    </div>
+
+                    <!--联系客服-->
+                    <div class="service opacity" onclick="getHelp()"><img src="../images/personal_lxkf.png" alt=""><span>联系客服</span></div>
+                </div>
+            </div>
+            <div class="order_det">
+                <div class="order_det_padd">
+                    <div class="prd_process">
+                    </div>
+                    <div class="refund">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 我的核销码模态框 -->
+        <div class="pay_pswC">
+            <div class="pay_pswBG"></div>
+            <div class="pay_pswBody">
+                <h3 class="pp_title">我的核销码<span class="pp_close"></span></h3>
+                <div class="codeimgC">
+                    <div class="codeimg" id="codeimg"></div>
+                    <p>我的核销码:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/common/jquery-1.12.4.min.js"></script>
+    <script src="../js/common/swiper.min.js"></script>
+    <script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+    <script src="../js/common/getUrlParam.js"></script>
+    <script src="../js/common/md5.js"></script>
+    <script src="../js/common/fastclick.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/layer.js"></script>
+    <script src="../js/common/qrcode.min.js"></script>
+    <script src="../js/common/ajaxJS.js"></script>
+    <script src="../js/order_detail.js"></script>
+</body>
+
+</html>

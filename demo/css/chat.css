@@ -1,0 +1,422 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.home_top {
+  height: 1.44rem;
+  border-bottom: 0.026667rem solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_top span {
+  color: #232323;
+  font-size: 0.453333rem;
+  text-align: center;
+}
+
+.home_top img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.home_top .return {
+  margin-left: 0.16rem;
+}
+
+.home_top .search {
+  margin-right: 0.16rem;
+}
+
+.chat_content {
+  width: 10rem;
+  height: 16.32rem;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.chat_content .chat_head {
+  width: 10rem;
+  position: fixed;
+  top: 1.466667rem;
+  left: 0;
+  height: 1.866667rem;
+  padding: 0.266667rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chat_content .chat_head .img img {
+  width: 1.466667rem;
+  height: 1.466667rem;
+  border-radius: 0.053333rem;
+}
+
+.chat_content .chat_head .shop_deatil {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.chat_content .chat_head .shop_deatil .title span {
+  line-height: 0.493333rem;
+  color: #232323;
+  font-size: 0.346667rem;
+  text-align: left;
+}
+
+.chat_content .chat_head .shop_deatil .price {
+  line-height: 0.4rem;
+  color: #de0000;
+  font-size: 0.293333rem;
+  text-align: center;
+}
+
+.chat_content .chat_head .shop_deatil .transfer {
+  line-height: 0.4rem;
+  color: #a0a0a0;
+  font-size: 0.293333rem;
+  text-align: center;
+}
+
+.chat_content .chat_head .buy {
+  width: 2.266667rem;
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+  background-color: #009943;
+}
+
+.chat_content .chat_head .buy span {
+  color: #ffffff;
+  font-size: 0.373333rem;
+}
+
+.chat_content .chat_item {
+  padding: 0.266667rem;
+  box-sizing: border-box;
+}
+
+.chat_content .chat_item .chat_cont {
+  max-width: 6.8rem;
+  border-radius: 0.053333rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+.chat_content .chat_item .chat_cont span {
+  line-height: 0.533333rem;
+  font-size: 0.346667rem;
+  text-align: left;
+}
+
+.chat_content .chat_item .head_img {
+  width: 1.066667rem;
+  height: 1.066667rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat_content .chat_item .head_img img {
+  width: 1.066667rem;
+  height: 1.066667rem;
+}
+
+.chat_content .me {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.chat_content .me .chat_cont {
+  background-color: #ffffff;
+  margin-right: 0.266667rem;
+}
+
+.chat_content .shop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.chat_content .shop .chat_cont {
+  border-radius: 0.053333rem;
+  background-color: #009943;
+  margin-left: 0.266667rem;
+}
+
+.chat_content .shop .chat_cont span {
+  color: #ffffff;
+}
+
+.chat_content .chat_record {
+  width: 10rem;
+  height: 10.56rem;
+  position: fixed;
+  overflow-y: auto;
+  top: 3.333333rem;
+}
+
+.chat_content .bottom {
+  width: 10rem;
+  height: 3.893333rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.chat_content .bottom .input_head {
+  width: 10rem;
+  height: 1.226667rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.08rem 0 rgba(98, 98, 98, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chat_content .bottom .input_head .small img {
+  width: 0.666667rem;
+  height: 0.666667rem;
+}
+
+.chat_content .bottom .input_head .add img {
+  width: 0.666667rem;
+  height: 0.666667rem;
+}
+
+.chat_content .bottom .input_head .input {
+  width: 6.373333rem;
+  height: 0.866667rem;
+  border-radius: 0.08rem;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0.04rem 0 rgba(127, 127, 127, 0.5);
+}
+
+.chat_content .bottom .input_head .input input {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.chat_content .bottom .input_head .send {
+  width: 0.866667rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+
+.chat_content .bottom .input_head .send span {
+  color: #848484;
+  font-size: 0.426667rem;
+  text-align: center;
+}
+
+.chat_content .bottom .input_select {
+  width: 10rem;
+  height: 2.666667rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.chat_content .bottom .input_select .make {
+  width: 1.333333rem;
+  height: 1.333333rem;
+}
+
+.chat_content .bottom .input_select .make img {
+  width: 1.333333rem;
+  height: 1.333333rem;
+}
+
+.chat_content .bottom .input_select .select {
+  width: 1.333333rem;
+  height: 1.333333rem;
+}
+
+.chat_content .bottom .input_select .select img {
+  width: 1.333333rem;
+  height: 1.333333rem;
+}

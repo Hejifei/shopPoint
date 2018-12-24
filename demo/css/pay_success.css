@@ -1,0 +1,292 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.payC_body {
+  text-align: center;
+  padding-top: 1.773333rem;
+  visibility: hidden;
+}
+
+.payC_body img {
+  width: 3.333333rem;
+  height: 2.266667rem;
+}
+
+.payC_body .paysuc_title {
+  margin-top: 0.813333rem;
+  height: 0.746667rem;
+  line-height: 0.746667rem;
+  color: #030303;
+  font-size: 0.533333rem;
+  font-weight: bold;
+}
+
+.payC_body .paysuc_moneyleft {
+  margin-top: 0.613333rem;
+  height: 1.093333rem;
+  line-height: 1.093333rem;
+  color: #848484;
+  font-size: 0.373333rem;
+}
+
+.payC_body .paysuc_moneyleft span {
+  font-weight: bold;
+  font-size: 0.773333rem;
+  color: #232323;
+  display: inline-block;
+}
+
+.payC_body .paysuc_scoreleft {
+  height: 1.493333rem;
+  line-height: 1.493333rem;
+  color: #848484;
+  font-size: 0.373333rem;
+  margin-bottom: 0.426667rem;
+}
+
+.payC_body .paysuc_scoreleft span {
+  font-weight: bold;
+  font-size: 0.773333rem;
+  color: #232323;
+  display: inline-block;
+}
+
+.payC_body p {
+  margin-top: 0.266667rem;
+  line-height: 0.533333rem;
+  color: #848484;
+  font-size: 0.373333rem;
+  text-align: center;
+  padding: 0 0.533333rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.payC_body p span {
+  color: #232323;
+}
+
+.pay_btnC {
+  width: 6.666667rem;
+  height: 1.066667rem;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 3.533333rem;
+  border-radius: 0.053333rem;
+  padding: 0.053333rem;
+  background-color: #fff;
+  background: -webkit-linear-gradient(left, #23BCBA, #009943);
+  background: -o-linear-gradient(right, #23BCBA, #009943);
+  background: -moz-linear-gradient(right, #23BCBA, #009943);
+  background: linear-gradient(to right, #23BCBA, #009943);
+}
+
+.pay_btnC a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 0.96rem;
+  background-color: #fff;
+  font-size: 0.4rem;
+  color: #009943;
+  margin: auto;
+}

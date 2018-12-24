@@ -1,0 +1,242 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.order_content {
+  padding: 1.2rem 0 1.546667rem;
+  background-color: #F2F2F2;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.groupline {
+  background-color: #fff;
+  border-bottom: 0.013333rem solid #e1e1e1;
+  height: 1.213333rem;
+  line-height: 1.213333rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.groupline label {
+  line-height: 1.213333rem;
+  color: #000000;
+  font-size: 0.346667rem;
+}
+
+.groupline input {
+  width: 6.666667rem;
+  text-align: right;
+  outline: none;
+  height: 0.933333rem;
+  line-height: 0.533333rem;
+  color: #000000;
+  font-size: 0.346667rem;
+}
+
+.assessSubC {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.266667rem 0.4rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.assessSubC a {
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.013333rem;
+  border: 0;
+  display: inline-block;
+  background: #23BCBA;
+  border-radius: 1.333333rem;
+  background: -webkit-linear-gradient(left, #23BCBA, #009943);
+  background: -o-linear-gradient(right, #23BCBA, #009943);
+  background: -moz-linear-gradient(right, #23BCBA, #009943);
+  background: linear-gradient(to right, #23BCBA, #009943);
+  color: #ffffff;
+  font-size: 0.373333rem;
+  text-align: center;
+}

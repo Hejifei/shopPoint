@@ -1,0 +1,170 @@
+@import "../reset";
+@import "../variable";
+
+.home_top {
+  height: 108px;
+  border-bottom: 2px solid rgba(225, 225, 225, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .home_seach {
+    span {
+      color: rgba(35, 35, 35, 1);
+      font-size: 34px;
+      text-align: center;
+       
+    }
+  }
+  .menage {
+    margin-right: 26px;
+    span {
+      color: rgba(0, 0, 0, 1);
+      font-size: 28px;
+      text-align: center;
+       
+    }
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  .return {
+    margin-left: 12px;
+  }
+  .search {
+    margin-right: 12px;
+  }
+}
+
+
+.address_content {
+  width: 750px;
+  overflow: hidden;
+  .item {
+    width: 850px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    .my_info {
+      width: 690px;
+      padding: 20px 30px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      float: left;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      .name {
+        span {
+          color: rgba(0, 0, 0, 1);
+          font-size: 26px;
+          text-align: left;
+           
+        }
+      }
+      .is_default {
+        width: 79px;
+        height: 32px;
+        border-radius: 4px;
+        border: 2px solid rgba(0, 153, 67, 1);
+        margin-left: 18px;
+        text-align: center;
+        line-height: 32px;
+        span {
+          width: 70px;
+          height: 30px;
+          line-height: 30px;
+          color: rgba(0, 153, 67, 1);
+          font-size: 22px;
+          text-align: center;
+           
+        }
+      }
+      .phone {
+        margin-left: 28px;
+        span {
+          height: 37px;
+          line-height: 37px;
+          color: rgba(0, 0, 0, 1);
+          font-size: 26px;
+          text-align: right;
+           
+        }
+      }
+    }
+    .address {
+      span {
+        width: 580px;
+        height: 33px;
+        line-height: 33px;
+        color: rgba(132, 132, 132, 1);
+        font-size: 24px;
+        text-align: left;
+         
+
+      }
+    }
+    .default {
+      display: flex;
+      align-items: center;
+      margin-top: 14px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      span {
+        height: 30px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 22px;
+        text-align: center;
+         
+
+      }
+    }
+    .edit {
+      width: 30px;
+      height: 33px;
+      img {
+        width: 30px;
+        height: 33px;
+      }
+    }
+    .del {
+      height: 100%;
+      width: 100px;
+      background: red;
+      float: left;
+      text-align: center;
+      line-height: 100%;
+      span {
+        font-size: 30px;
+         
+        color: #FFFFFF;
+      }
+    }
+  }
+
+}
+.add {
+  position: fixed;
+  bottom: 20px;
+  text-align: center;
+  line-height: 76px;
+  width: 690px;
+  height: 76px;
+  border-radius: 100px;
+  background: -webkit-linear-gradient(left, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* 标准的语法 */
+  span {
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    text-align: center;
+     
+  }
+
+}

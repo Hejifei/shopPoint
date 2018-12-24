@@ -1,0 +1,141 @@
+@import "../reset";
+@import "../variable";
+
+.home_top {
+  height: 108px;
+  border-bottom: 2px solid rgba(225, 225, 225, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    color: rgba(35, 35, 35, 1);
+    font-size: 34px;
+    text-align: center;
+     
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  .return {
+    margin-left: 12px;
+  }
+  .search {
+    margin-right: 12px;
+  }
+}
+.refund_content {
+  position: relative;
+}
+
+.add_content {
+  width: 750px;
+  .item {
+    width: 690px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .title {
+      span {
+        height: 40px;
+        line-height: 40px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 28px;
+        text-align: center;
+         
+      }
+    }
+    .input {
+      margin-left: 86px;
+      span {
+        height: 40px;
+        line-height: 40px;
+        color: rgba(0, 0, 0, 1);
+        font-size: 28px;
+        text-align: center;
+         
+      }
+      input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+        color: #aab2bd;
+        /* placeholder字体大小  */
+        font-size: 28px;
+        /* placeholder位置  */
+        color: rgba(132, 132, 132, 1);
+         
+      }
+      input {
+        height: 38px;
+        line-height: 38px;
+        color: rgba(160, 160, 160, 1);
+        font-size: 28px;
+        text-align: left;
+         
+
+      }
+    }
+
+
+  }
+  .detail {
+    width: 690px;
+    height: 180px;
+    margin-left: 30px;
+    textarea {
+      width: 690px;
+      height: 180px;
+      border: none;
+      line-height: 40px;
+      color: rgba(160, 160, 160, 1);
+      font-size: 28px;
+      text-align: left;
+       
+
+    }
+
+  }
+}
+.submit_box {
+  width: 750px;
+  height: 720px;
+  background-color: rgba(242, 242, 242, 1);
+  padding-top: 30px;
+  box-sizing: border-box;
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    span {
+      color: rgba(0, 0, 0, 1);
+      font-size: 22px;
+      text-align: left;
+       
+    }
+  }
+  .submit_btn {
+    width: 690px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    border-radius: 100px;
+
+    background: -webkit-linear-gradient(left, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* 标准的语法 */
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-size: 28px;
+      text-align: center;
+       
+    }
+  }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover,">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="apple-touch-startup-image" href="start.png"/>
+    <title>首页</title>
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/common/swiper.min.css">
+    
+    <script src="../js/common/base.js"></script>
+    <!-- <script src="../js/common/fit.min.js"></script> -->
+
+</head>
+
+<body>
+   <div class="HomeBox page-current" style="overflow: hidden;">
+       <!--顶部-->
+       <div class="search_top">
+           <div class="home_back"><a><img  src="../images/general_return.png" alt="" class="return"></a></div>
+           <div class="home_seach">
+               <input type="text" id="searchipt" disabled>
+               <div class="plachehold">
+                   <img  src="../images/general_search.png" alt="">
+                   <span class="zn">大家都在搜:好吃又实惠的东西</span>
+                   <span class="en">Everyone at the find:</span>
+               </div>
+           </div>
+       </div>
+       <div class="up_refresh">
+            <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+            <div class="span"><span class="cn">小狮子正在奋力加载中</span><span class="en">Loading...</span></div>
+        </div>
+       <!-- 下拉刷新与上拉加载的容器 -->
+       <div  class="content wrapper" >
+           <div>
+                <!-- 下拉刷新 -->
+                <div class="top-tip">
+                    <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+                    <div class="span"><span class="cn">释放立即刷新</span><span class="en">Drop-down Refresh</span></div>
+                </div>
+                <!-- 刷新内容容器 -->
+                <div class="indexContent" id="refreshContainer">
+
+                </div>
+                <!-- 上拉加载更多 -->
+                <!-- <div class="infinite-scroll-preloader">
+                    <div class="preloader">
+                        <div class="loadingtext">
+                            <img src="../images/loading_gif.gif" /><span>上拉加载更多</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nomore">
+                    <span>没有更多了</span>
+                </div> -->
+            </div>
+        </div>
+       <!--轮播-->
+       <!-- <div class="home_swiper">
+           <div class="swiper-container  swiper-container1">
+               <div class="swiper-wrapper  swiper-container1">
+
+               </div>
+               <div class="swiper-pagination"></div>
+           </div>
+       </div> -->
+       <!-- 分类 -->
+       <!-- <div class="home_column">
+           <div class="typesline">
+               <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_mzgh.png"/>
+                    </a>
+               </div>
+               <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_fsxb.png"/>
+                    </a>
+                </div>
+                <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_mywj.png"/>
+                    </a>
+               </div>
+               <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_spbj.png"/>
+                    </a>
+                </div>
+                <div class="typebox">
+                    <a>
+                       <img data-original="../images/main_jjjf.png"/>
+                    </a>
+               </div>
+           </div>
+           <div class="typesline">
+                <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_zbzb.png"/>
+                    </a>
+                </div>
+                <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_smdq.png"/>
+                    </a>
+                 </div>
+                 <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_ydhw.png"/>
+                    </a>
+                </div>
+                <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_shfs.png"/>
+                    </a>
+                 </div>
+                 <div class="typebox">
+                    <a>
+                        <img data-original="../images/main_gdfl.png"/>
+                    </a>
+                </div>
+            </div>
+       </div> -->
+       <!--广告-->
+       <!-- <div class="home_ad">
+           <div class="swiper-container swiper-container2">
+                <div class="swiper-wrapper swiper-wrapper2">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+       </div> -->
+       <!-- 商城精选 -->
+       <!-- <div class="home_content">
+           <div class="home_content_con">
+               <div class="home_content_title">
+                   <span class="title">商城精选</span>
+                   <span class="biao"> · BEST</span>
+               </div>
+               <div class="">
+                   <div class="swiper-container3">
+                       <div class="swiper-wrapper">
+                          
+                       </div>
+                       <div class="swiper-pagination"></div>
+                   </div>
+               </div>
+           </div>
+        </div> -->
+        <!-- 猜你喜欢 -->
+        <!-- <div class="home_content">
+           <div class="home_content_con">
+               <div class="home_content_title" onclick="window.location.href = 'guess_like.html'">
+                   <span class="title">猜你喜欢</span>
+                   <span class="biao"> · EXPLORE</span>
+               </div>
+               <div class="home_content_content guess">
+                   <ul></ul>
+               </div>
+           </div>
+       </div> -->
+       <!--底部-->
+       <!-- <div class="home_bottom">
+           <span class="zn">没有更多了</span>
+           <span class="en">no more</span>
+       </div> -->
+       <!--底部导航-->
+       <div class="home_bottom_nav">
+           <ul>
+               <li>
+                   <a href="javascript:void(0)">
+                       <img src="../images/main1.png" alt="">
+                       <span style="color: #009943">优选</span>
+                       <!-- <span style="color: #009943" class="en">Home</span> -->
+                   </a>
+               </li>
+               <li>
+                   <a href="classify.html">
+                       <img src="../images/fenlei2.png" alt="">
+                       <span>分类</span>
+                       <!-- <span class="en">points mall</span> -->
+                   </a>
+
+               </li>
+               <li>
+                   <a href="shop_car.html">
+                       <img src="../images/gwc2.png" alt="">
+                       <span>购物车</span>
+                       <!-- <span class="en">find</span> -->
+                   </a>
+               </li>
+               <li>
+                   <a class="goto_person" href="person_center.html">
+                       <img src="../images/wode2.png" alt="">
+                       <span >我的</span>
+                       <!-- <span class="en">Member Center</span> -->
+                   </a>
+               </li>
+           </ul>
+       </div>
+
+       <div class="homeModel"></div>
+   </div>
+</body>
+
+<script src="../js/common/jquery-1.12.4.min.js"></script>
+<script src="../js/common/bscorll.js"></script>
+<!-- <script>
+    $.config = {
+            router: false
+    }
+</script>
+<script type='text/javascript' src='../js/common/light7/js/light7.min.js' charset='utf-8'></script> -->
+<script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+<script src="../js/common/swiper.min.js"></script>
+<script src="../js/common/getUrlParam.js"></script>
+<script src="../js/common/md5.js"></script>
+<script src="../js/common/fastclick.min.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/layer.js"></script>
+<script src="../js/common/ajaxJS.js"></script>
+<script src="//cbe.convertlab.com/cbe/collect?tid=4580676468659034838&at=0&h=web"></script>
+<script src="../js/common/tracker_jfsc.js"></script>
+<script src="../js/home.js"></script>
+</html>

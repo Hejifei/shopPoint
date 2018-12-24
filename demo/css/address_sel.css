@@ -1,0 +1,294 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.address_box {
+  height: 100vh;
+  padding-top: 1.2rem;
+  padding-top: 1.546667rem;
+}
+
+.addressList {
+  padding: 0 0.4rem;
+}
+
+.addressList ul {
+  list-style: none;
+}
+
+.addressList ul li {
+  padding: 0.4rem 0;
+  border-bottom: 0.013333rem solid #E1E1E1;
+}
+
+.addressList ul li .addleft .title {
+  height: 0.48rem;
+  line-height: 0.48rem;
+  color: #000000;
+  font-size: 0.346667rem;
+}
+
+.addressList ul li .addleft .title .name {
+  width: 2.666667rem;
+  display: inline-block;
+}
+
+.addressList ul li .addleft .title .name .normal {
+  padding: 0 0.266667rem;
+  height: 0.426667rem;
+  line-height: 0.426667rem;
+  color: #009943;
+  font-size: 0.293333rem;
+  font-style: normal;
+  margin-left: 0.306667rem;
+  border: 0.026667rem solid #009943;
+  border-radius: 0.053333rem;
+}
+
+.addressList ul li .addleft .addline {
+  margin-top: 0.28rem;
+  height: 0.453333rem;
+  line-height: 0.453333rem;
+  color: #848484;
+  font-size: 0.32rem;
+}
+
+.addressList ul li .addleft .ifcheck {
+  margin-top: 0.173333rem;
+  height: 0.426667rem;
+  line-height: 0.426667rem;
+  color: #000000;
+  font-size: 0.293333rem;
+  padding-left: 0.586667rem;
+}
+
+.addressList ul li .addleft .checksel {
+  background: url(../images/shop_check2.png) no-repeat left center;
+  background-size: 0.426667rem 0.426667rem;
+}
+
+.addressList ul li .addleft .checksel input {
+  display: none;
+}
+
+.addressList ul li .addleft .checkseled {
+  background: url(../images/shop_check1.png) no-repeat left center;
+  background-size: 0.426667rem 0.426667rem;
+}
+
+.addressList ul li .addright {
+  line-height: 1.626667rem;
+  padding-left: 0.533333rem;
+}
+
+.addressList ul li .addright img {
+  width: 0.666667rem;
+  height: 0.666667rem;
+  position: relative;
+  top: 0.133333rem;
+}
+
+.bottomBtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1.546667rem;
+  width: 100%;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+  padding: 0.266667rem 0.4rem;
+}
+
+.bottomBtn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  background: #23BCBA;
+  background: -webkit-linear-gradient(left, #23BCBA, #009943);
+  background: -o-linear-gradient(right, #23BCBA, #009943);
+  background: -moz-linear-gradient(right, #23BCBA, #009943);
+  background: linear-gradient(to right, #23BCBA, #009943);
+  border-radius: 1.333333rem;
+  font-size: 0.373333rem;
+  color: #FFFFFF;
+  line-height: 1.013333rem;
+  text-align: center;
+}

@@ -1,0 +1,356 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.home_top {
+  height: 1.44rem;
+  border-bottom: 0.026667rem solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_top .home_seach span {
+  color: #232323;
+  font-size: 0.453333rem;
+  text-align: center;
+}
+
+.home_top .menage {
+  margin-right: 0.346667rem;
+}
+
+.home_top .menage span {
+  color: #000000;
+  font-size: 0.373333rem;
+  text-align: center;
+}
+
+.home_top img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.home_top .return {
+  margin-left: 0.16rem;
+}
+
+.home_top .search {
+  margin-right: 0.16rem;
+}
+
+.address_content {
+  width: 10rem;
+  overflow: hidden;
+}
+
+.address_content .item {
+  width: 11.333333rem;
+  border-bottom: 0.013333rem solid #e1e1e1;
+}
+
+.address_content .item .my_info {
+  width: 9.2rem;
+  padding: 0.266667rem 0.4rem 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: left;
+}
+
+.address_content .item .info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.266667rem;
+}
+
+.address_content .item .info .name span {
+  color: #000000;
+  font-size: 0.346667rem;
+  text-align: left;
+}
+
+.address_content .item .info .is_default {
+  width: 1.053333rem;
+  height: 0.426667rem;
+  border-radius: 0.053333rem;
+  border: 0.026667rem solid #009943;
+  margin-left: 0.24rem;
+  text-align: center;
+  line-height: 0.426667rem;
+}
+
+.address_content .item .info .is_default span {
+  width: 0.933333rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #009943;
+  font-size: 0.293333rem;
+  text-align: center;
+}
+
+.address_content .item .info .phone {
+  margin-left: 0.373333rem;
+}
+
+.address_content .item .info .phone span {
+  height: 0.493333rem;
+  line-height: 0.493333rem;
+  color: #000000;
+  font-size: 0.346667rem;
+  text-align: right;
+}
+
+.address_content .item .address span {
+  width: 7.733333rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  color: #848484;
+  font-size: 0.32rem;
+  text-align: left;
+}
+
+.address_content .item .default {
+  display: flex;
+  align-items: center;
+  margin-top: 0.186667rem;
+}
+
+.address_content .item .default img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.address_content .item .default span {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #000000;
+  font-size: 0.293333rem;
+  text-align: center;
+}
+
+.address_content .item .edit {
+  width: 0.4rem;
+  height: 0.44rem;
+}
+
+.address_content .item .edit img {
+  width: 0.4rem;
+  height: 0.44rem;
+}
+
+.address_content .item .del {
+  height: 100%;
+  width: 1.333333rem;
+  background: red;
+  float: left;
+  text-align: center;
+  line-height: 100%;
+}
+
+.address_content .item .del span {
+  font-size: 0.4rem;
+  color: #FFFFFF;
+}
+
+.add {
+  position: fixed;
+  bottom: 0.266667rem;
+  text-align: center;
+  line-height: 1.013333rem;
+  width: 9.2rem;
+  height: 1.013333rem;
+  border-radius: 1.333333rem;
+  background: -webkit-linear-gradient(left, #23bcba, #009943);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #23bcba, #009943);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #23bcba, #009943);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #23bcba, #009943);
+  /* 标准的语法 */
+}
+
+.add span {
+  color: #ffffff;
+  font-size: 0.373333rem;
+  text-align: center;
+}

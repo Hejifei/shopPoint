@@ -1,0 +1,325 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.home_top {
+  height: 1.44rem;
+  border-bottom: 0.026667rem solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_top span {
+  color: #232323;
+  font-size: 0.453333rem;
+  text-align: center;
+}
+
+.home_top img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.home_top .return {
+  margin-left: 0.16rem;
+}
+
+.home_top .search {
+  margin-right: 0.16rem;
+}
+
+.refund_content {
+  position: relative;
+}
+
+.add_content {
+  width: 10rem;
+}
+
+.add_content .item {
+  width: 9.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  border-bottom: 0.013333rem solid #e1e1e1;
+  height: 1.333333rem;
+  display: flex;
+  align-items: center;
+}
+
+.add_content .item .title span {
+  height: 0.533333rem;
+  line-height: 0.533333rem;
+  color: #000000;
+  font-size: 0.373333rem;
+  text-align: center;
+}
+
+.add_content .item .input {
+  margin-left: 1.146667rem;
+}
+
+.add_content .item .input span {
+  height: 0.533333rem;
+  line-height: 0.533333rem;
+  color: #000000;
+  font-size: 0.373333rem;
+  text-align: center;
+}
+
+.add_content .item .input input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #aab2bd;
+  /* placeholder字体大小  */
+  font-size: 0.373333rem;
+  /* placeholder位置  */
+  color: #848484;
+}
+
+.add_content .item .input input {
+  height: 0.506667rem;
+  line-height: 0.506667rem;
+  color: #a0a0a0;
+  font-size: 0.373333rem;
+  text-align: left;
+}
+
+.add_content .detail {
+  width: 9.2rem;
+  height: 2.4rem;
+  margin-left: 0.4rem;
+}
+
+.add_content .detail textarea {
+  width: 9.2rem;
+  height: 2.4rem;
+  border: none;
+  line-height: 0.533333rem;
+  color: #a0a0a0;
+  font-size: 0.373333rem;
+  text-align: left;
+}
+
+.submit_box {
+  width: 10rem;
+  height: 9.6rem;
+  background-color: #f2f2f2;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+}
+
+.submit_box .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.submit_box .title img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.submit_box .title span {
+  color: #000000;
+  font-size: 0.293333rem;
+  text-align: left;
+}
+
+.submit_box .submit_btn {
+  width: 9.2rem;
+  height: 1.013333rem;
+  line-height: 1.013333rem;
+  text-align: center;
+  border-radius: 1.333333rem;
+  background: -webkit-linear-gradient(left, #23bcba, #009943);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #23bcba, #009943);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #23bcba, #009943);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #23bcba, #009943);
+  /* 标准的语法 */
+}
+
+.submit_box .submit_btn span {
+  color: #ffffff;
+  font-size: 0.373333rem;
+  text-align: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title class="zn">商品评价</title>
+    <title class="en">Home</title>
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/shop_assess.css">
+    <script src="../js/common/base.js"></script>
+</head>
+<body>
+<div class="comment_box page-current">
+    <diV class="navigation">
+        <span>商品评价</span>
+        <a href="javascript:history.go(-1)"><img src="../images/general_return.png"></a>
+    </diV>
+    <div class="common_classify">
+        <ul>
+            <li class="active" commentType='0' >
+                <div class="text">全部</div>
+                <div class="number">&nbsp;</div>
+            </li>
+            <li commentType='1' >
+                <div class="text">好评</div>
+                <div class="number">&nbsp;</div>
+            </li>
+            <li commentType='2' >
+                <div class="text">差评</div>
+                <div class="number">&nbsp;</div>
+            </li>
+            <li commentType='3' >
+                <div class="text">追评</div>
+                <div class="number">&nbsp;</div>
+            </li>
+        </ul>
+    </div>
+    <div class="up_refresh">
+        <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+        <div class="span"><span class="cn">小狮子正在奋力加载中</span><span class="en">Loading...</span></div>
+    </div>
+    <!-- 下拉刷新与上拉加载的容器 -->
+    <div  class="content wrapper">
+        <div>
+            <!-- 下拉刷新 -->
+            <div class="top-tip">
+                <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+                <div class="span"><span class="cn">释放立即刷新</span><span class="en">Drop-down Refresh</span></div>
+            </div>
+            <!-- <div class="pull-to-refresh-layer">
+                <div class="reloadlineC">
+                    <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+                    <div class="span"><span>小狮子正在奋力加载中</span></div>
+                </div>
+                <div class="pull-to-refresh-arrow">
+                    <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+                    <div class="span"><span>小狮子正在奋力加载中</span></div>
+                </div>
+            </div> -->
+            
+            <!-- 刷新内容容器 -->
+            <div class="common_content indexContent">
+            </div>
+            <!-- 上拉加载更多 -->
+            <div class="scroll_bottom">
+                <div><span class="cn">上拉加载更多...</span><span class="en">Loading...</span></div>
+            </div>
+            <div class="nomore">
+                <span>没有更多了</span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script src="../js/common/jquery-1.12.4.min.js"></script>
+<script src="../js/common/bscorll.js"></script>
+<script src="../js/common/swiper.min.js"></script>
+<script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+<script src="../js/common/getUrlParam.js"></script>
+<script src="../js/common/md5.js"></script>
+<script src="../js/common/fastclick.min.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/layer.js"></script>
+<script src="../js/common/ajaxJS.js"></script>
+<script src="../js/shop_assess.js"></script>
+</body>
+</html>

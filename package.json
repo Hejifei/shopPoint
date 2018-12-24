@@ -1,0 +1,24 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-postcss": "^7.0.0",
+    "postcss-px2rem": "^0.3.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.5.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

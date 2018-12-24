@@ -1,0 +1,71 @@
+#share-qrcode {
+  background-image: url(../images/share_vx.png);
+}
+
+#share-qzone {
+  background-image: url(../images/share_pyq.png);
+}
+
+#share-sina {
+  background-image: url(../images/share_weibo.png);
+}
+
+#share-qq {
+  background-image: url(../images/share_qq.png);
+}
+
+#share-sms {
+  background-image: url(../images/share_mes.png);
+}
+
+#share-link {
+  background-image: url(../images/share_copy.png);
+}
+
+.tiansbox {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
+.tiansboxBg {
+  width: 100%;
+  height: 100%;
+}
+
+.tiansboxbottom {
+  width: 100%;
+  height: 2.666667rem;
+  padding: 0 0.4rem;
+  transform: scale(1.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #EDEDED;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+  z-index: 99999;
+}
+
+.tiansboxbottom > div {
+  width: 1.333333rem;
+  height: 1.333333rem;
+  margin: 0 0.266667rem;
+  display: flex;
+  float: left;
+  cursor: pointer;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiansboxbottom > div img {
+  width: 1.333333rem;
+  height: 1.333333rem;
+}

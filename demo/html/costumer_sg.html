@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title class="zn">评价</title>
+    <title class="en">Home</title>
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/common/layer.css">
+    <link rel="stylesheet" href="../css/costumer_sg.css">
+    <script src="../js/common/base.js"></script>
+</head>
+<body>
+<div class="order_box">
+    <!--顶部-->
+    <diV class="navigation">
+        <span>退货详情</span>
+        <a href="javascript:history.go(-1)"><img src="../images/general_return.png"></a>
+    </diV>
+    <!---->
+    <div class="order_content">
+        <!--商品-->
+        <div class="groupline row">
+            <label>物流公司</label>
+            <input class="required logisticsCompany" placeholder="请填写物流公司名称"  maxlength="20"/>
+        </div>
+        <div class="groupline row">
+            <label>物流单号</label>
+            <input class="required logisticsNo" placeholder="请填写物流单号" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" maxlength="20"/>
+        </div>
+    </div>
+    <div class="assessSubC">
+        <a>提交</a>
+    </div>
+</div>
+<script src="../js/common/jquery-1.12.4.min.js"></script>
+<script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+<script src="../js/common/getUrlParam.js"></script>
+<script src="../js/common/md5.js"></script>
+<script src="../js/common/fastclick.min.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/layer.js"></script>
+<script src="../js/common/qrcode.min.js"></script>
+<script src="../js/common/ajaxJS.js"></script>
+<script src="../js/costumer_sg.js"></script>
+</body>
+</html>

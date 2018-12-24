@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>openApp</title>
+</head>
+<body>
+
+</body>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script>
+  function getUrlParam(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    let r=window.location.search.substr(1).match(reg);//匹配目标参数
+    if(r!=null)return unescape(r[2]);return null;//返回参数值
+  }
+
+  let shareUrl = getUrlParam('url')
+  // console.log(shareUrl)
+  let downUrl = 'https://picture.tiens.com/tiens-h5/html/download.html'  // 测试地址
+  // let downUrl = 'https://wallet.pointswin.com/tiens-h5/html/download.html'  // 正式地址
+  // console.log(shareUrl + '&sta=1&invitationCode='+getUrlParam('invitationCode'))
+  // alert(shareUrl + '&sta=1&invitationCode='+getUrlParam('invitationCode'))
+  window.location.href = shareUrl + '&sta=1&invitationCode='+getUrlParam('invitationCode')
+</script>
+</html>

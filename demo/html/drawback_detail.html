@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title class="zn">退款详情</title>
+    <title class="en">Home</title>
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/drawback_detail.css">
+    <script src="../js/common/base.js"></script>
+</head>
+<style>
+    /* .layui-m-layercont {
+        width: 200px !important;
+    }
+    .layui-m-layerchild {
+        max-width: 500px !important;
+    } */
+    
+    .fixheight {
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="refund_box">
+        <!--顶部-->
+        <diV class="navigation">
+            <span>退款详情</span>
+            <a href="javascript:history.go(-1)"><img src="../images/general_return.png"></a>
+        </diV>
+        <!--退款-->
+        <div class="refund_content">
+            <!--商品-->
+            <div class="prolist">
+                <!-- <a class="commodity" href=" ./shop_detail.html">
+                <div class="img"><img src="../images/main_sp1.png" alt=""></div>
+                <div class="detail">
+                    <div class="title">飞利浦type-c扩展坞usb3.0分线器笔记本电脑拓展器一拖四HUB转VGA</div>
+                    <div class="describe">太空灰-四合一借口</div>
+                </div>
+            </a> -->
+            </div>
+
+            <!--售后类型-->
+            <div class="infoline row inithide">
+                <div class="linelab"><span>售后类型</span></div>
+                <div class="lineright refundType">退货退款</div>
+            </div>
+            <!--退款原因-->
+            <!-- <div class="infoline row">
+            <div class="linelab"><span>退款原因</span></div>
+            <div class="lineright">
+                <select class="required">
+                    <option>拍错/多拍/不喜欢</option>
+                    <option>商品成分描述不符</option>
+                    <option>质量问题</option>
+                    <option>生产日期/保质期描述不符</option>
+                    <option>卖家发错货</option>
+                    <option>其他</option>
+                </select>
+            </div>
+        </div> -->
+            <div class="infoline row inithide">
+                <div class="linelab"><span class="aftersaleResText">退款原因</span></div>
+                <div class="lineright select">
+                    拍错/多拍/不喜欢
+                </div>
+            </div>
+            <!--退款金额-->
+            <div class="infoline row refundAmoutline inithide">
+                <div class="linelab"><span>退款金额</span></div>
+                <div class="lineright">
+                    <!-- ￥89.00 -->
+                </div>
+            </div>
+            <!--退款说明-->
+            <div class="infoline row inithide">
+                <div class="linelab">
+                    <!-- <span>退款说明</span> -->
+                    <span class="thtext">换货说明</span>
+                </div>
+                <div class="lineright textarealine">
+                    <textarea class="required instructions" placeholder="这里是退款说明"></textarea>
+                </div>
+            </div>
+            <!--上传凭证-->
+            <div class="infoline inithide">
+                <div class="linelab"><span>上传凭证</span></div>
+                <!-- <input type="file" id="csl_file" class="fileipt" accept="image/*"/> -->
+                <div class="refund_upload">
+                    <!-- <div class="img"><img src="../images/shop_scpz.png"><span class="imgdel"></span></div> -->
+                    <!-- <img class="uploadimg" src="../images/shop_scpz.png" alt="" onclick="focusclick()"> -->
+                    <div class="uploadimg" id="uploadimg">
+                        <img src="../images/shop_scpz.png" alt="">
+                        <input type="file" id="csl_file" class="fileipt" accept="image/*" />
+                    </div>
+                </div>
+            </div>
+            <div class="infoline row saleaft_status inithide" style="display: none;">
+                <div class="linelab"><span>售后状态</span></div>
+                <div class="lineright">
+                    <!-- 售后中<a>查看物流</a> -->
+                </div>
+            </div>
+            <!--提交-->
+            <div class="assessSubC inithide">
+                <a onclick='refundSubmit()'>提交</a>
+            </div>
+
+        </div>
+
+        <div class="bigImg">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    
+    <script src="../js/common/jquery-1.12.4.min.js"></script>
+    <script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+    <script src="../js/common/getUrlParam.js"></script>
+    <script src="../js/common/md5.js"></script>
+    <script src="../js/common/fastclick.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/exif.js"></script>
+    <script src="../js/common/layer.js"></script>
+    <script src="../js/common/qrcode.min.js"></script>
+    <script src="../js/common/ajaxJS.js"></script>
+    <script src="//cbe.convertlab.com/cbe/collect?tid=4580676468659034838&at=0&h=web"></script>
+    <script src="../js/common/tracker_jfsc.js"></script>
+    <script src="../js/drawback_detail.js"></script>
+</body>
+
+</html>

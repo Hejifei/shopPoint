@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.jqm-round-wrap{
+    display:block;
+    position:relative;
+    width:70px;
+    height:70px;
+    overflow:hidden;
+    border-radius:35px;
+    -webkit-border-radius:35px;
+}
+.jqm-round-sector{
+    position:absolute;
+    width:70px;
+    height:70px;
+}
+.jqm-round-bg { 
+    position:absolute;
+    width:70px;
+    height:70px;
+    /*background-color:#f76220;*/
+    border-radius:35px;
+    -webkit-border-radius:35px;
+}
+.jqm-round-circle{
+    position:absolute;
+    background-color:#FFF;
+    width:50px;
+    height:50px;
+    left:5px;
+    top:5px;
+    z-index:10;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.jqm-round-circle p{font-size:14px;line-height:94px;margin:0;text-align:center;width:100%;font-weight:bold;}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,viewport-fit=cover, maximum-scale=1.0, user-scalable=no;">
+    <title class="zn">收货地址</title>
+    <title class="en">Home</title>
+
+
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    <!-- <link rel="stylesheet" href="../js/common/SUI/sm.min.css">
+    <link rel="stylesheet" href="../js/common/SUI/sm-extend.min.css"> -->
+
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    
+    <!-- <link rel="stylesheet" href="./js/common/light7/css/light7.min.css"> -->
+    <!-- <link rel="stylesheet" href="./js/common/light7/css/sm-extend.min.css"> -->
+    <!-- <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css"> -->
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/address_add.css">
+    <script src="../js/common/flexible.js"></script>
+    
+</head>
+<body>
+        <!-- <diV class="navigation">
+                <div>
+                    <span>收货地址</span>
+                    <a class="address-back" href="javascript:history.go(-1)"><img src="../images/general_return.png"></a>
+                </div>
+            </diV>   -->
+<div class="add_box">
+    <!--顶部-->
+    <diV class="navigation">
+        <div>
+            <span>收货地址</span>
+            <a class="address-back" href="javascript:history.go(-1)"><img src="../images/general_return.png"></a>
+        </div>
+    </diV>
+    <!--新增-->
+    <div class="add_content">
+        <div class="consignee item">
+            <div class="title">收货人</div>
+            <div class="input"><input id="consignee" class="required" type="text" placeholder="请填写收件人姓名"></div>
+        </div>
+        <div class="consignee item">
+            <div class="title">联系电话</div>
+            <div class="input"><input id="phone" class="required" type="text" placeholder="请填写收件人电话"></div>
+        </div>
+        <div class="consignee item">
+            <div class="title">所在地区</div>
+            <div class="input"><input class="required" type="text"  placeholder="请选择省市区" id="location" name="location"></div>
+        </div>
+        <div class="detail consignee">
+            <div class="title" style="display: none;">详细地址</div>
+            <textarea id="detailAddress"  class="required" placeholder="请填写详细地址（如门牌号等），不少于5个字"></textarea>
+        </div>
+        <div class="submit_box">
+            <div class="ifcheck checksel">设为默认寄件地址<input id="defaultStatus" type="checkbox" name="addsel"/></div>
+            <div class="submit_btn">
+                <span>保存</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 省市区插件 -->
+    <!-- <script type='text/javascript' src='../js/common/SUI/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/common/SUI/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/common/SUI/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="../js/common/SUI/sm-city-picker.js" charset="utf-8"></script> -->
+    <script src="../js/common/jquery-1.12.4.min.js"></script>
+    <script>
+        $.config = {
+                router: false
+        }
+    </script>
+    <script type='text/javascript' src='../js/common/light7/js/light7.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='../js/common/light7/js/light7-city-picker.min.js' charset='utf-8'></script>
+    <script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+    <script src="../js/common/getUrlParam.js"></script>
+    <script src="../js/common/md5.js"></script>
+    <script src="../js/common/fastclick.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/layer.js"></script>
+    <script src="../js/common/ajaxJS.js"></script>
+    <script src="../js/address_add.js"></script>
+</body>
+</html>

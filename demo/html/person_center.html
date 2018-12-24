@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title>个人中心</title>
+    <!-- <link rel="stylesheet" href="../css/tianspublic.css"> -->
+    <link rel="stylesheet" href="../css/person_center.css">
+    <script src="../js/common/base.js"></script>
+</head>
+<body>
+    <div class="person_box">
+        <!--顶部-->
+        <div class="pencen_top">
+            <diV class="navigation">
+                <span>我的</span>
+                <a href="./home.html"><img src="../images/general_return1.png"></a>
+            </diV>
+            <div class="pencen_infoC row">
+                <div class="pencent_left">
+                    <img class="pc_headimg" src="../images/personal_dehead.png" onerror="javascript:this.src='../images/personal_dehead.png';" />
+                    <div class="penc_infoDti">
+                        <div class="nickname"></div>
+                        <div class="scrolline"></div>
+                    </div>
+                </div>
+                <div class="pencent_right">
+                    <span class="vipimgC"><img src="../images/personal_v.png"/></span>
+                    <div class="plusC">
+                        <div class="plustitle">PLUS会员</div>
+                        <div class="plusintr">升级9大特权</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pencen_menuC">
+            <a href="./order_all.html"><img src="../images/personal_qbdd.png"/><span>全部订单</span></a>
+            <a href="./order_all.html?type=0" class="type0a"><img src="../images/personal_dfk.png"/><span>待付款</span></a>
+            <!-- menu_active -->
+            <a href="./order_all.html?type=1" class="type1a"><img src="../images/personal_dfh.png"/><span>待发货</span></a>
+            <a href="./order_all.html?type=2" class="type2a"><img src="../images/personal_dsh.png"/><span>待收货</span></a>
+            <a href="./order_all.html?type=4" class="type4a"><img src="../images/personal_dpj.png"/><span>待评价</span></a>
+            <a href="./order_all.html?type=5" class="type5a"><img src="../images/personal_shdd.png"/><span>售后订单</span></a>
+        </div>
+        <div class="pencen_menuC">
+            <a href="./address_list.html"><img src="../images/personal_shdz.png"/><span>收货地址</span></a>
+            <a class="adsaddhref" href="./address_add.html"><img src="../images/personal_tjdz.png"/><span>添加地址</span></a>
+        </div>
+        <!--底部导航-->
+        <div class="home_bottom_nav">
+            <ul>
+                <li>
+                    <a href="home.html">
+                        <img src="../images/main2.png" alt="">
+                        <span  class="zn">优选</span>
+                        <span  class="en">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="classify.html">
+                        <img src="../images/fenlei2.png" alt="">
+                        <span class="zn">分类</span>
+                        <span class="en">points mall</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="shop_car.html">
+                        <img src="../images/gwc2.png" alt="">
+                        <span class="zn">购物车</span>
+                        <span class="en">find</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="goto_person" href="javascript:void(0)">
+                        <img src="../images/wode1.png" alt="">
+                        <span class="zn" style="color: #009943">我的</span>
+                        <span class="en" style="color: #009943">Member Center</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/common/jquery-1.12.4.min.js"></script>
+    <script src="../js/common/swiper.min.js"></script>
+    <script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+    <script src="../js/common/getUrlParam.js"></script>
+    <script src="../js/common/md5.js"></script>
+    <script src="../js/common/fastclick.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/layer.js"></script>
+    <script src="../js/common/ajaxJS.js"></script>
+    <script src="../js/person_center.js"></script>
+</body>
+</html>

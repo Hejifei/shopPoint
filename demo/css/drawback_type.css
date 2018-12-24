@@ -1,0 +1,301 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.order_content {
+  padding: 1.2rem 0 1.546667rem;
+  background-color: #F2F2F2;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.inithide {
+  visibility: hidden;
+}
+
+.commodity {
+  width: 100%;
+  box-sizing: border-box;
+  height: 2.933333rem;
+  padding-left: 0.4rem;
+  padding-right: 0.266667rem;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+
+.commodity .img img {
+  width: 2.4rem;
+  height: 2.373333rem;
+}
+
+.commodity .detail {
+  margin-left: 0.266667rem;
+}
+
+.commodity .detail .title {
+  margin-bottom: 0.2rem;
+  height: 0.906667rem;
+  line-height: 0.453333rem;
+  color: #232323;
+  font-size: 0.32rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.commodity .detail .describe {
+  line-height: 0.426667rem;
+  color: #a0a0a0;
+  font-size: 0.293333rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.commodity .detail .prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.commodity .detail .prices .price {
+  height: 0.493333rem;
+  line-height: 0.4rem;
+  color: #DE0000;
+  font-size: 0.293333rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.commodity .detail .prices .num span {
+  line-height: 0.4rem;
+  color: #232323;
+  font-size: 0.293333rem;
+  text-align: left;
+}
+
+.prolist_son {
+  box-sizing: border-box;
+}
+
+.deawback_typeC {
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.deawback_typeC .dt_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 0.026667rem solid #f2f2f2;
+  padding: 0.32rem 0.426667rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.deawback_typeC .dt_line img {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+
+.deawback_typeC .dt_line .dt_intro {
+  margin-left: 0.426667rem;
+}
+
+.deawback_typeC .dt_line .dt_intro h3 {
+  line-height: 0.533333rem;
+  color: #000000;
+  font-size: 0.373333rem;
+}
+
+.deawback_typeC .dt_line .dt_intro p {
+  line-height: 0.453333rem;
+  color: #a0a0a0;
+  font-size: 0.32rem;
+}

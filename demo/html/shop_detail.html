@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title class="zn">商品详情</title>
+    <title class="en">Home</title>
+    <!--分享需要添加的样式-->
+    <link rel="stylesheet" href="../css/share.css">
+    <link rel="stylesheet" href="../css/common/jsmodern-1.1.1.min.css">
+    <!--分享需要添加的样式-->
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/shop_detail.css">
+    <link rel="stylesheet" href="../css/common/swiper.min.css">
+    <script src="../js/common/base.js"></script>
+</head>
+<body>
+<div class="shop_box">
+    <!-- <diV class="navigation">
+        <span>商品详情</span>
+        <a ><img src="../images/general_return.png"></a>
+    </diV> -->
+    <div class="shop_top row">
+        <div class="return"><a><img src="../images/shop_return.png" alt=""></a></div>
+        <div class="shop_share"><a><img src="../images/shop_share.png" alt=""></a></div>
+        <!-- <div><img src="../images/shop_share.png" alt=""></div> -->
+    </div>
+    <!--商品轮播图-->
+    <div class="home_swiper">
+        <div class="swiper-container proTopDet_swiper">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">
+                    <a href="###">
+                        <img src="../images/shop_sp1.png" alt="">
+                    </a>
+                </div> -->
+                <!-- <div class="swiper-slide">
+                    <a href="###">
+                        <img src="../images/shop_sp1.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="###">
+                        <img src="../images/shop_sp1.png" alt="">
+                    </a>
+                </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 商品价格信息 -->
+    <div class="shop_detail inithide">
+        <div class="title">
+            <!-- 花样初绽放床上四件套尺寸:230*200，纯棉【2条】 -->
+        </div>
+        <div class="describe">
+            <!-- 2条装，更划算！苏州吴江进口，无任何添加剂！ -->
+        </div>
+        <div class="discount">
+            <div class="price"></div>
+            <div class="score"></div>
+            <div class="oldprice"></div>
+            <div class="hotsale"></div>
+        </div>
+        <div class="expressage">
+            <!-- <div>快递:5.00元</div>
+            <div>销量:1500</div>
+            <div>江苏 苏州</div> -->
+        </div>
+    </div>
+    <div class="grayline inithide"></div>
+    <button id="downloadButton" style="line-height: 50px;display: none;">唤醒或下载app</button>
+    <!-- 规格 评论 入口 -->
+    <div class="goods_size row inithide">
+        <div class="sizesel" pronum='1'>
+            规格
+            <!-- 规格<span>已选 “白色” “111cm规格”</span> -->
+        </div>
+        <img  src="../images/general_next.png"/>
+    </div>
+    <div class="shop_common inithide">
+        <div><span>商品评价</span><span class="assessNum"></span></div>
+        <a ><span>查看全部</span><img src="../images/shop_next.png" alt=""></a>
+    </div>
+    <div class="grayline inithide"></div>
+    <!-- 店铺信息介绍 -->
+    <div class="shop_store inithide">
+        <div class="stroe_img">
+            <img src="../images/shop_logo.png" alt="">
+        </div>
+        <div class="store_detail">
+            <div class="title"></div>
+            <div class="describe"></div>
+            <div class="number">全部宝贝:</div>
+        </div>
+        <a class="goto_store">
+            <img src="../images/shop_storein.png" alt="">
+        </a>
+    </div>
+    <!-- 猜你喜欢 -->
+    <div class="title_pictex inithide">猜你喜欢</div>
+    <div class="guesslikeC"></div>
+    <!-- 商品图文详情 -->
+    <div class="title_pictex inithide">图文详情</div>
+    <!-- 图文详情图片 -->
+    <div class="shop_describe inithide">
+        <img src="../images/general_none.png" alt="">
+    </div>
+    <!-- 底部购买 -->
+    <div class="bottom">
+        <div class="help" onclick="getHelp()">
+            <img src="../images/shop_kefu.png" alt="">
+            <span>客服</span>
+        </div>
+        <a class="shop_car">
+            <div class="car">
+                <img src="../images/shop_gwc.png" alt="">
+                <div class="shopcarNum">
+                </div>
+            </div>
+            <span class="shop_car_text">购物车</span>
+        </a>
+        <div class="option">
+            <div class="add_shopcar" onclick="AddtoShopCar()"><span>加入购物车</span></div>
+            <div class="buy" onclick="buyNow()"><span>立即购买</span></div>
+        </div>
+    </div>
+</div>
+<!--立即购买-->
+<div class="now_buy">
+    <div class="now_buyBG"></div>
+    <div class="buy_detail">
+        <div class="buy_top">
+            <div class="shop_img">
+                <img src="../images/chat_sp.png" alt="">
+            </div>
+            <div class="detail">
+                <div class="title">
+                    <!-- 24寸 纯PC“铁框”（非铝制品） -->
+                </div>
+                <div class="price">
+                    <!-- <span>¥ 99.00</span><div>积分120</div> -->
+                </div>
+                <div class="number">
+                     <!-- 库存: 299 -->
+                </div>
+            </div>
+        </div>
+        <div class="goodssflistC">
+            <div class="color select_item">
+                <div class="select_item_lab">颜色</div>
+                <div class="select_item_btn">
+                    <!-- <div class="active">分类111</div>
+                    <div>分类111</div>
+                    <div>分类111</div> -->
+                </div>
+            </div>
+            <div class="style select_item">
+                <div class="select_item_lab">款式</div>
+                <div class="select_item_btn">
+                    <!-- <div class="active">分类111</div>
+                    <div>分类111</div>
+                    <div>分类111</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="amount select_item">
+            <div class="select_item_lab">数量</div>
+            <div class="add">
+                <div class="numchange min"><img src="../images/shop_min.png" alt=""></div>
+                <input class="select_num" value="1" type="number" />
+                <!-- <div class="select_num">1</div> -->
+                <div class="numchange add"><img src="../images/shop_plus.png" alt=""></div>
+            </div>
+        </div>
+        <div class="submit">确定</div>
+    </div>
+</div>
+<!-- 分享 -->
+<div class="shareC">
+    <div class="shareBG"></div>
+    <div class="shareB">
+        <ul class="shareline">
+            <li><a><img src="../images/share_vx.png"/><p>微信</p></a></li>
+            <li><a><img src="../images/share_pyq.png"/><p>朋友圈</p></a></li>
+            <li><a><img src="../images/share_qq.png"/><p>QQ</p></a></li>
+            <li><a><img src="../images/share_weibo.png"/><p>微博</p></a></li>
+            <li><a><img src="../images/share_mes.png"/><p>短信</p></a></li>
+        </ul>
+        <ul class="shareline">
+            <li><a><img src="../images/share_copy.png"/><p>复制链接</p></a></li>
+        </ul>
+    </div>
+</div>
+<!-- 点击图片放大 -->
+<div class="modelimgDetail proggimg_Detail">
+    <div class="imgDetail"></div>
+    <div class="imgDetailC">
+        <img  src=""/>
+    </div>
+    <!-- <div class="imgDet_close"><img src="../images/general_close.png"/></div> -->
+</div>
+<!-- 轮播放大 -->
+<div class="modelimgDetail proban_Detail">
+    <div class="imgDetail"></div>
+    <div class="imgDetailC">
+        <div class="swiper-container proDet_swiper">
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- <div class="imgDet_close"><img src="../images/general_close.png"/></div> -->
+</div>
+
+<!--loading-->
+<div id="loading" style="display: none;">
+    <img src="../images/loading_gif.gif" alt="">
+</div>
+<!--浏览器分享后的提示图片-->
+<div id="outLink" style="display: none;">
+    <img src="../images/live_weixin.png" alt="">
+</div>
+
+<!-- 分享二维码 -->
+<div class="shareQRCode">
+    <div class="qrCodeBG"></div>
+    <div class="qrCodeC">
+        <div class="qrCodeCImg"><img src="" /></div>
+        <div class="codeInfo">
+            <div class="codeTxt">
+                <h3></h3>
+                <p><label><i>￥</i></label><label><i>积分</i></label></p>
+            </div>
+            <div class="codeimg" id="codeimg"></div>
+        </div>
+    </div>
+</div>
+    <div class="shareFlex" style="display:none">
+        <img src="../images/share_shopop.png">
+    </div> 
+    <div class="loadingC">
+        <div class="center">
+            <!-- <img src="../images/wallet_loading.png" alt="" class="bg"> -->
+            <img src="../images/wallet_load.png" alt="" class="tr">
+        </div>
+    </div>
+    <script src="../js/common/jquery-1.12.4.min.js"></script>
+    <!--分享需要添加的js文件开始-->
+    <script src="../js/common/jsmodern-1.1.1.min.js"></script>
+    <script src="../js/common/jquery.zclip.min.js"></script>
+    <!--分享需要添加的js文件结束-->
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/swiper.min.js"></script>
+    <script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+    <script src="../js/common/getUrlParam.js"></script>
+    <script src="../js/common/md5.js"></script>
+    <script src="../js/common/fastclick.min.js"></script>
+    <!-- <script src="../js/common/qrcode.min.js"></script> -->
+    <script src="../js/common/makeCode.js"></script>
+    <script src="../js/common/layer.js"></script>
+    <script src="../js/common/ajaxJS.js"></script>
+    <script src="//cbe.convertlab.com/cbe/collect?tid=4580676468659034838&at=0&h=web"></script>
+    <script src="../js/common/tracker_jfsc.js"></script>
+    <!-- 以下为openinstall集成代码，建议在html文档中尽量靠前放置，加快初始化过程 -->
+    <!-- 强烈建议直接引用下面的cdn加速链接，以得到最及时的更新，我们将持续跟踪各种主流浏览器的变化，提供最好的服务；不推荐将此js文件下载到自己的服务器-->
+    <script type="text/javascript" charset="UTF-8" src="//res.cdn.openinstall.io/openinstall.js"></script>
+    <script src="../js/shop_detail.js"></script>
+</body>
+</html>

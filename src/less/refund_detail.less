@@ -1,0 +1,268 @@
+@import "../reset";
+@import "../variable";
+
+.home_top {
+  height: 108px;
+  border-bottom: 2px solid rgba(225, 225, 225, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    color: rgba(35, 35, 35, 1);
+    font-size: 34px;
+    text-align: center;
+     
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  .return {
+    margin-left: 12px;
+  }
+  .search {
+    margin-right: 12px;
+  }
+}
+.refund_content {
+  position: relative;
+}
+
+.commodity {
+  width: 700px;
+  height: 220px;
+  padding-left: 30px;
+  padding-right: 20px;
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  align-items: center;
+  .img {
+    img {
+      width: 180px;
+      height: 178px;
+    }
+  }
+  .detail {
+    margin-left: 20px;
+    .title {
+      margin-bottom: 17px;
+      span {
+        width: 500px;
+        line-height: 33px;
+        color: rgba(35, 35, 35, 1);
+        font-size: 24px;
+         
+      }
+    }
+    .describe {
+      line-height: 30px;
+      color: rgba(160, 160, 160, 1);
+      font-size: 22px;
+      text-align: left;
+       
+      margin-bottom: 17px;
+    }
+    .prices {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .price {
+        height: 37px;
+        line-height: 30px;
+        color: rgba(222, 0, 0, 1);
+        font-size: 22px;
+        text-align: center;
+         
+      }
+      .num {
+        span {
+          line-height: 30px;
+          color: rgba(35, 35, 35, 1);
+          font-size: 22px;
+          text-align: left;
+           
+        }
+
+
+      }
+    }
+  }
+}
+
+.reason,.money,.explain {
+  width: 690px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+  div:nth-child(1) {
+    span {
+      color: rgba(0, 0, 0, 1);
+      font-size: 26px;
+      text-align: left;
+       
+
+    }
+  }
+}
+.reason,.money {
+  height: 85px;
+}
+.refund_reason {
+  display: flex;
+  align-items: center;
+  span {
+    color: rgba(0, 0, 0, 1);
+    font-size: 26px;
+    text-align: left;
+     
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.refund_money {
+  span {
+    line-height: 37px;
+    color: rgba(0, 153, 67, 1);
+    font-size: 26px;
+    text-align: right;
+     
+  }
+}
+.refund_explain {
+  width: 485px;
+  line-height: 37px;
+  padding: 24px 0;
+  color: rgba(35, 35, 35, 1);
+  font-size: 26px;
+  text-align: left;
+   
+  span {
+    color: rgba(35, 35, 35, 1);
+    font-size: 26px;
+    text-align: left;
+     
+  }
+}
+.upload {
+  height: 250px;
+  width: 690px;
+  padding: 24px 30px;
+  background-color: rgba(255, 255, 255, 1);
+  div:nth-child(1){
+    margin-bottom: 24px;
+    span {
+      color: rgba(0, 0, 0, 1);
+      font-size: 26px;
+      text-align: left;
+       
+    }
+  }
+  .refund_upload {
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 6px;
+      border: 1.57px solid rgba(151, 151, 151, 1);
+    }
+  }
+}
+
+.submit_box {
+  width: 750px;
+  height: 414px;
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  .submit {
+    width: 690px;
+    height: 76px;
+    border-radius: 100px;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 76px;
+    margin-bottom: 21px;
+    background: -webkit-linear-gradient(left, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* 标准的语法 */
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-size: 28px;
+      text-align: center;
+       
+
+    }
+
+  }
+}
+
+.select_box {
+  width: 750px;
+  height: 1206px;
+  position: fixed;
+  display: none;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  .select_list {
+    width: 750px;
+    height: 689px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    bottom: 0;
+    z-index: 22;
+    span {
+      color: rgba(35, 35, 35, 1);
+      font-size: 28px;
+      text-align: center;
+       
+    }
+    .head {
+      text-align: center;
+
+    }
+    .item {
+      height: 80px;
+      width: 710px;
+      padding:0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(225, 225, 225, 1);
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .sure {
+    width: 690px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    border-radius: 100px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 20px;
+    background: -webkit-linear-gradient(left, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(35, 188, 186, 1), rgba(0, 153, 67, 1)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgba(35, 188, 186, 1) , rgba(0, 153, 67, 1)); /* 标准的语法 */
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-size: 28px;
+      text-align: center;
+       
+    }
+  }
+}
+
+

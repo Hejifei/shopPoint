@@ -1,0 +1,586 @@
+@import '../reset';
+@import '../variable';
+@import './tianslayer';
+
+body{height: 100vh;}
+.order_box {
+  position: relative;
+  height: 100%;
+  visibility: hidden;
+}
+
+.contentnorm {
+  padding-top: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  height: 100%;
+  box-sizing: border-box;
+  .content_head {
+    width: 100%;
+    height: 68px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid rgba(225, 225, 225, 1);
+    background-color: #fff;
+    z-index: 10;
+    background-color: #fff;
+    position: relative;
+    .classify {
+      position: relative;
+      height: 68px;
+      line-height: 68px;
+      span {
+        height: 68px;
+        line-height: 68px;
+        display: inline-block;
+        color: rgba(0, 0, 0, 1);
+        font-size: 28px;
+        text-align: center;
+
+        position: relative;
+      }
+    }
+    .active {
+      span {
+        color: rgba(0, 153, 67, 1);
+      }
+      span:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        background-color: rgba(0, 153, 67, 1);
+      }
+    }
+  }
+}
+.item {
+  // margin-bottom: 16px;
+  border-bottom: 16px solid #F2F2F2;
+  background-color: #fff;
+  .shop {
+    height: 80px;
+    line-height: 80px;
+    box-sizing: border-box;
+    padding: 0 20px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      color: rgba(35, 35, 35, 1);
+      font-size: 26px;
+      height: 80px;
+      line-height: 80px;
+      display: flex;
+      align-items:center;
+
+      text-decoration: none;
+      img {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        // position: relative;
+        // top: -20px;
+      }
+      span {
+        max-width: 320px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      img:nth-child(1) {
+        margin-right: 25px;
+      }
+      img:nth-child(3) {
+        margin-left: 18px;
+      }
+    }
+    .reminder {
+      span {
+        color: rgba(0, 153, 67, 1);
+        font-size: 26px;
+        text-align: right;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      img {
+        width: 38px;
+        height: 37px;
+      }
+      span {
+        color: rgba(0, 0, 0, 1);
+        font-size: 28px;
+        text-align: left;
+        font-family: PingFangSC-Medium;
+        margin-left: 30px;
+      }
+    }
+  }
+  .commodity {
+    width: 100%;
+    box-sizing: border-box;
+    height: 220px;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    .img {
+      img {
+        width: 180px;
+        height: 180px;
+        display: inline-block;
+      }
+    }
+    .detail {
+      width: 100%;
+      margin-left: 20px;
+      .title {
+        margin-bottom: 15px;
+        height: 68px;
+        line-height: 34px;
+        color: rgba(35, 35, 35, 1);
+        font-size: 24px;
+
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .describe {
+        line-height: 32px;
+        color: rgba(160, 160, 160, 1);
+        font-size: 22px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+      }
+      .prices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .price {
+          height: 37px;
+          line-height: 30px;
+          color: #de0000;
+          font-size: 22px;
+          text-align: center;
+
+          font-weight: bold;
+        }
+        .score {
+          margin-left: 20px;
+          height: 37px;
+          line-height: 30px;
+          color: #009943;
+          font-size: 22px;
+          text-align: center;
+
+          // font-weight: bold;
+        }
+        .num {
+          span {
+            line-height: 30px;
+            color: rgba(35, 35, 35, 1);
+            font-size: 22px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .price_deetail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    .reminder,
+    .transfer {
+      line-height: 60px;
+      color: rgba(35, 35, 35, 1);
+      font-size: 24px;
+    }
+    .price {
+      line-height: 60px;
+      color: #de0000;
+      font-size: 22px;
+
+      font-weight: bold;
+    }
+  }
+  .order_option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 26px 0;
+    background-color: #fff;
+    a {
+      padding: 0 35px;
+      // height: 54px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 4px;
+      line-height: 54px;
+      margin-right: 20px;
+      text-align: center;
+      border: 2px solid rgba(35, 35, 35, 0.5);
+      span {
+        color: rgba(35, 35, 35, 1);
+        font-size: 26px;
+      }
+    }
+  }
+}
+strike {
+  color: rgba(160, 160, 160, 1);
+  font-size: 22px;
+  text-align: center;
+
+  margin-left: 10px;
+}
+.noaddress {
+  line-height: 94px;
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 24px;
+}
+
+// 配送方式
+.shipmetC {
+  .title {
+    width: 100%;
+    left: 159.5px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(35, 35, 35, 1);
+    font-size: 28px;
+    text-align: center;
+  }
+  .shipselC {
+    margin-top: 11px;
+    width: 100%;
+    box-sizing: border-box;
+    label {
+      width: 100%;
+      height: 81px;
+      padding: 0 20px;
+      line-height: 81px;
+      box-sizing: border-box;
+      color: rgba(35, 35, 35, 1);
+      font-size: 26px;
+
+      .ifcheck {
+        height: 81px;
+        width: 60px;
+      }
+      .checksel {
+        background: url(../images/shop_check2.png) no-repeat center center;
+        background-size: 60px 60px;
+        // input{display: none;}
+      }
+      .checkseled {
+        background: url(../images/shop_check1.png) no-repeat center center;
+        background-size: 60px 60px;
+      }
+    }
+  }
+  // 退款原因
+  .shipSubC {
+    margin-top: 50px;
+    height: 76px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      box-sizing: border-box;
+      background: #23bcba;
+      background: -webkit-linear-gradient(left, #23bcba, #009943);
+      background: -o-linear-gradient(right, #23bcba, #009943);
+      background: -moz-linear-gradient(right, #23bcba, #009943);
+      background: linear-gradient(to right, #23bcba, #009943);
+      border-radius: 100px;
+      font-size: 28px;
+      color: #ffffff;
+      line-height: 76px;
+      text-align: center;
+    }
+  }
+}
+.layui-m-layer1 .layernormal {
+  padding: 0 !important;
+}
+
+// 核销码弹框
+.pay_pswC {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: none;
+  z-index: 100;
+  .pay_pswBG {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+  }
+  .pay_pswBody {
+    width: 510px;
+    height: 555px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    .pp_title {
+      height: 88px;
+      line-height: 88px;
+      color: rgba(3, 3, 3, 1);
+      font-size: 34px;
+      text-align: center;
+      font-family: PingFangSC-Medium;
+      border-bottom: 1px solid #009943;
+      position: relative;
+      .pp_close {
+        width: 80px;
+        height: 88px;
+        display: inline-block;
+        background: url(../images/general_close.png) no-repeat center center;
+        background-size: 36px 36px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .codeimgC {
+      padding-top: 30px;
+      .codeimg {
+        width: 344px;
+        height: 346px;
+        margin: auto;
+        // overflow: hidden;
+        img {
+          width: 344px !important;
+          height: 344px !important;
+          // width: 100%;
+          // height: 100%;
+        }
+      }
+      p {
+        height: 80px;
+        line-height: 80px;
+        color: rgba(35, 35, 35, 1);
+        font-size: 30px;
+        text-align: center;
+
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// 下拉刷新
+.content {
+  // height: 1099px;
+  height: calc(~'100% - 70px');
+  overflow: hidden;
+  // padding-bottom:30px;
+  box-sizing: border-box;
+  >div{min-height: 101%;}
+  // box-sizing: border-box;
+  // position: absolute;
+  // top: 0;
+  // // top:-47px;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // overflow: auto;
+  // -webkit-overflow-scrolling: touch;
+  // -webkit-transform: translate3d(0, 0, 0);
+  // transform: translate3d(0, 0, 0);
+  // padding-top: 160px;
+  // // height: 100vh;
+  // z-index: 1;
+  // background-color: #fff;
+}
+// 下拉刷新
+// .pull-to-refresh-layer{background-color: #fff;}
+.top0{top:0 !important;}
+.reloadlineC {
+  display: none;
+  text-align: center;
+  img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  span {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    color: rgba(35, 35, 35, 1);
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.pull-to-refresh-arrow {
+  z-index: -2;
+  position: absolute;
+  top: 21px;
+  // top:0;
+  width: 100%;
+  text-align: center;
+  img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  span {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    color: rgba(35, 35, 35, 1);
+    font-size: 24px;
+    text-align: center;
+  }
+}
+// 上拉加载更多
+.infinite-scroll-preloader {
+  padding: 25px 0;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  text-align: center;
+  background-color: #fff;
+  height: 102px;
+  overflow: hidden;
+  visibility: hidden;
+}
+.loadingtext {
+  line-height: 52px;
+  height: 52px;
+  img {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+  }
+  span {
+    line-height: 52px;
+    display: inline-block;
+    color: rgba(35, 35, 35, 1);
+    font-size: 26px;
+    top: -15px;
+    position: relative;
+    margin-left: 20px;
+  }
+}
+// 没有更多
+.nomore {
+  display: none;
+  height: 100px;
+  background-color: rgba(242, 242, 242, 1);
+  color: #b1b1b1;
+  font-size: 22px;
+  text-align: center;
+  line-height: 100px;
+}
+.layui-m-layershade {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.layui-m-layer0 .layui-m-layerchild{max-width: 550px !important;}
+
+.up_refresh {
+  width: 750px;
+  height: 150px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+  .img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    img {
+      width: 100px;
+      height: 100px;
+      // animation: spin 8000ms infinite linear;
+    }
+    // @keyframes spin {
+    //   0%   { transform: rotate(360deg); }
+    //   100% { transform: rotate(0deg); }
+    // }
+  }
+  .span {
+    // width: 240px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 130px;
+    text-align: center;
+    span {
+      color: rgba(132, 132, 132, 1);
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+}
+
+.top-tip {
+  display: none;
+  text-align: center;
+  position: relative;
+  .img{width: 100%;height: 100px;text-align: center;position: absolute;top:-180px;
+    img{width: 100px;height: 100px;}
+  }
+  .span {
+    // width: 240px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -60px;
+    text-align: center;
+    span {
+      color: rgba(132, 132, 132, 1);
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+}
+
+.scroll_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-bottom: 50px;
+  visibility: hidden;
+}

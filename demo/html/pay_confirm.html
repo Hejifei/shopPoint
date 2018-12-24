@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;">
+    <title>支付确认</title>
+    <!-- 民生银行 h5 密码控件css 结束 -->
+    <!-- <link href="../css/common/keyboard.css" >
+    <link src="../css/common/keyboard.css" rel="stylesheet" type="text/css" /> -->
+    <!-- 民生银行 h5 密码控件css 开始 -->
+    <link rel="stylesheet" href="../css/pay_confirm.css"/>
+    
+    
+    <script src="../js/common/flexible.js"></script>
+    <style>
+        #real-ipt {
+            text-indent: -999em; /*文本向左缩进*/  
+            margin-left: -100%; /*输入框光标起始点向左左移*/ 
+            width: 200%; /*输入框增大一倍*/  
+            opacity: 0;  
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="payC_body">
+        <div class="payC_top">
+            <diV class="navigation">
+                <span>支付确认</span>
+                <a href="./order_all.html?type=0"><img src="../images/general_return1.png"></a>
+            </diV>
+            <div class="pro_name"></div>
+            <div class="pro_price"></div>
+            <div class="pro_countDown">
+                剩余支付时间:
+            </div>
+        </div>
+        <div>
+            <!-- <div>
+                <input type="text" id="SIPBox1" name="SIPBox1" value="" readonly="true"/>
+                <button id="checkPwd1">查看密码</button>
+            </div>
+            <br/>
+            <div>
+                <input type="text" id="SIPBox2" name="SIPBox2" value="" readonly="true" onchange="SIPBoxChange()" />
+                <button id="checkPwd2">查看密码</button>
+                
+            </div>
+            <a class="getPsw">获取输入值</a> -->
+            <div style="display: none;">
+                <!-- 赢粉宝键盘 -->
+                <input type="text" id="SIPBox3" name="SIPBox3"  value="" readonly="true" onfocus="showKeyboard1()"  />
+
+            </div>
+            <!-- <input type="text" id="SIPBox31" name="SIPBox1"  value="" onchange="SIPBox31Change()" /> -->
+            <!-- <a class="keyboardShow">键盘显示</a> -->
+            
+        </div>
+        <div class="pay_metlist">
+            <div class="label scorerow">
+                <!-- pay_cantsel -->
+                <div class="pay_mleft ">
+                    <img src="../images/shop_xfjf.png" />
+                    <!-- scorepayspan -->
+                    <div><label>消费积分</label><p class="scorepayspan"></p></div>
+                </div>
+                <div class="pay_mright integOn"></div>
+            </div>
+            <div class="label row moneyrow">
+                <div class="pay_mleft"><img src="../images/shop_yue.png" /><label>余额</label><span class="moneypayspan"></span></div>
+                <div class="pay_mright checksel"><input type="radio" name="paytype" value='3' /></div>
+            </div>
+            <!-- <div class="label row yfbline">
+                <div class="pay_mleft"><img src="../images/personal_yfb1.png" /><label>赢粉宝</label><span></span></div>
+                <div class="pay_mright checksel"><input type="radio" name="paytype" value='10' /></div>
+            </div> -->
+            <div class="label row xtfqline">
+                <div class="pay_mleft"><img src="../images/personal_xtfq.png" /><label>小通分期</label><span></span></div>
+                <div class="pay_mright checksel"><input type="radio" name="paytype" value='9' /></div>
+            </div>
+            <div class="label row wx">
+                <div class="pay_mleft"><img src="../images/login_vxicon.png" /><label>微信</label><span></span></div>
+                <div class="pay_mright checksel"><input type="radio" name="paytype" value='1' /></div>
+            </div>
+            <div class="label row AliPayline">
+                <div class="pay_mleft"><img src="../images/shop_alipay.png" /><label>支付宝</label><span></span></div>
+                <div class="pay_mright checksel"><input type="radio" name="paytype" value='0' /></div>
+            </div>
+            <div class="label row kjzfline">
+                <div class="pay_mleft"><img src="../images/wallet_kjzf.png" /><label>快捷支付</label><span></span></div>
+                <div class="pay_mright checksel"><input type="radio" name="paytype" value='2' /></div>
+            </div>
+            
+            
+            <p class="accountInt">当前账户累计积分：<label></label></p>
+            <div class="pay_btnC">
+                <a>立即付款</a>
+            </div>
+        </div>
+        <div class="pay_pswC">
+            <div class="pay_pswBG"></div>
+            <div class="pay_pswBody">
+                <h3 class="pp_title">支付<span class="pp_close"></span><span class="pp_set">设置支付密码</span></h3>
+                <div class="pp_pname"></div>
+                <div class="pp_pmoney">￥<span></span></div>
+                <div class="pp_ptype">
+                    <!-- <img src="../images/shop_yue.png"/><span>余额</span> -->
+                    <!-- <a class="row" href="../../..//tiens-wallet/demo/html/bank_manage.html">
+                        <div>
+                            <img src="http://221.239.72.121:443/files/bankimg/建设银行.png"/>
+                            <span>建设银行（3356）</span>
+                        </div>
+                        <div>
+                            <img class="imgright" src="../images/general_next.png"/>
+                        </div>
+                    </a> -->
+                </div>
+                <div class="pp_pswd">
+                    <!-- <ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+                    <input type="password" maxlength="6"/> -->
+                    <div class="wrapper">
+                        <div class="point"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="point"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="point"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="point"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="point"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="point"></div>
+                    </div>
+                    <div class="pay-password">
+                        <input type="tel" maxlength="6" class="real-ipt" id="real-ipt">
+                        <div class="surface-ipts">
+                            <div class="surface-ipt">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <!-- <input type="password">
+                                <input type="password">
+                                <input type="password">
+                                <input type="password">
+                                <input type="password">
+                                <input type="password"> -->
+                            </input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="pay_pop">
+            <div class="pay_pop_detail">
+                <div class="pop_title">
+                    <img src="../images/general_close.png" alt="" class="pop_close">
+                    <span><span class="cn">支付</span><span class="en">Pay</span></span>
+                </div>
+                <div class="pop_detail">
+                    <div class="shop_name"></div>
+                    <div><span>¥</span><span class="shop_number"></span></div>
+                </div>
+                <div class="pop_way">
+                    <img src="../images/personal_yue.png" alt="">
+                    <span><span class="cn">余额</span><span class="en">Balance</span></span>
+                </div>
+                <div class="pop_password">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pop_input">
+                <ul>
+                    <li>
+                        <div class="input_item"><span>1</span><span></span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>2</span><span>ABC</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>3</span><span>DEF</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>4</span><span>GHI</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>5</span><span>JKL</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>6</span><span>MNO</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>7</span><span>PQRS</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>8</span><span>TUV</span></div>
+                    </li>
+                    <li>
+                        <div class="input_item"><span>9</span><span>WXYZ</span></div>
+                    <li>
+    
+                    </li>
+                    <li>
+                        <div class="input_item"><span>0</span><span></span></div>
+                    </li>
+                    <li class="input_del">
+    
+                        <img src="../images/personal_del.png" width="40" height="30">
+    
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="CompleteKeyboard"></div>
+        <div id="NumberKeyboard"></div>
+    </div>
+
+    <div class="payloading">
+        <div class="ploadc"></div>
+        <div class="ploadbody">
+            <img src="../images/page_loading.gif">
+            <span>正在加载...</span>
+        </div>
+    </div>
+    <script src="../js/common/jquery-1.12.4.min.js"></script>
+    <!-- <script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script> -->
+    <script src="../js/common/getUrlParam.js"></script>
+    <script src="../js/common/md5.js"></script>
+    
+    <script src="../js/common/fastclick.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/layer.js"></script>
+    <script src="../js/common/ajaxJS.js"></script>
+    <!-- <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+    <script src="//cbe.convertlab.com/cbe/collect?tid=4580676468659034838&at=0&h=web"></script>
+    <script src="../js/common/tracker_jfsc.js"></script>
+    <!-- 民生银行 h5 密码控件js 开始-->
+    <script src="../js/common/sip.min.js"></script>
+    <!-- 民生银行 h5 密码控件js 结束-->
+    <script src="../js/pay_confirm.js"></script>
+</body>
+
+</html>

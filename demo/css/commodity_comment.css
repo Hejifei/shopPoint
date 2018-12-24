@@ -1,0 +1,317 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.home_top {
+  height: 1.44rem;
+  border-bottom: 0.026667rem solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_top span {
+  color: #232323;
+  font-size: 0.453333rem;
+  text-align: center;
+}
+
+.home_top img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+}
+
+.home_top .return {
+  margin-left: 0.16rem;
+}
+
+.home_top .search {
+  margin-right: 0.16rem;
+}
+
+.common_classify {
+  height: 1.333333rem;
+  border-bottom: 0.026667rem solid #e1e1e1;
+  box-sizing: border-box;
+}
+
+.common_classify ul {
+  display: flex;
+  align-items: center;
+}
+
+.common_classify ul li {
+  width: 2.5rem;
+  height: 1.306667rem;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.common_classify ul li div:nth-child(1) {
+  margin-bottom: 0.066667rem;
+}
+
+.common_classify ul .active {
+  background-color: #23bcba;
+  color: #FFFFFF;
+}
+
+.common_content {
+  width: 10rem;
+}
+
+.common_content .common_item {
+  width: 9.2rem;
+  margin-left: 0.4rem;
+}
+
+.common_content .common_item .common {
+  padding: 0.293333rem 0;
+  border-bottom: 0.026667rem solid #e1e1e1;
+}
+
+.common_content .common_item .common .user_info {
+  display: flex;
+  align-items: center;
+}
+
+.common_content .common_item .common .user_info .head_img img {
+  height: 0.573333rem;
+  width: 0.666667rem;
+}
+
+.common_content .common_item .common .user_info .nike {
+  margin-left: 0.066667rem;
+  margin-right: 0.12rem;
+}
+
+.common_content .common_item .common .user_info .rank {
+  margin-left: 0.12rem;
+  margin-right: 0.266667rem;
+  width: 0.413333rem;
+  height: 0.413333rem;
+  background-color: #ac9f7a;
+  border-radius: 0.026667rem;
+  text-align: center;
+  line-height: 0.413333rem;
+}
+
+.common_content .common_item .common .user_info .rank span {
+  color: #FFFFFF;
+}
+
+.common_content .common_item .common .user_info .like {
+  margin-left: 2.706667rem;
+}
+
+.common_content .common_item .common .user_info .like img {
+  width: 0.506667rem;
+  height: 0.666667rem;
+}
+
+.common_content .common_item .common .common_conent {
+  color: #232323;
+  font-size: 0.32rem;
+  line-height: 0.4rem;
+}
+
+.common_content .common_item .back {
+  padding: 0.293333rem 0;
+  border-bottom: 0.026667rem solid #e1e1e1;
+}
+
+.common_content .common_item .back .back_title {
+  margin-bottom: 0.133333rem;
+}
+
+.common_content .common_item .back .back_title span {
+  color: #009943;
+  font-size: 0.346667rem;
+  text-align: left;
+}
+
+.common_content .common_item .back .back_conent span {
+  color: #232323;
+  font-size: 0.346667rem;
+  text-align: left;
+}

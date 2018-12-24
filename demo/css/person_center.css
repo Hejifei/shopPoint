@@ -1,0 +1,475 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5为旧浏览器显示角色重置 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.en {
+  display: none;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+}
+
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.person_box {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 0 0 1.333333rem;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.pencen_top {
+  width: 100%;
+  visibility: hidden;
+  height: 5.306667rem;
+  background: url('../images/bg copy.png') no-repeat center center;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+.pencen_top .navigation {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.pencen_top .navigation span {
+  font-size: 0.453333rem;
+  display: inline-block;
+}
+
+.pencen_top .navigation a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 0.293333rem;
+}
+
+.pencen_top .navigation a img {
+  width: 0.533333rem;
+  height: 0.533333rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.pencen_top .pencen_infoC {
+  background-color: #fff;
+  margin: 0.533333rem 0.266667rem 0;
+  box-sizing: border-box;
+  height: 2.666667rem;
+  border-radius: 0.106667rem;
+  padding: 0.506667rem 0 0.506667rem 0.4rem;
+  font-size: 0;
+}
+
+.pencen_top .pencen_infoC .pencent_left {
+  display: flex;
+}
+
+.pencen_top .pencen_infoC .pencent_left .pc_headimg {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pencen_top .pencen_infoC .pencent_left .penc_infoDti {
+  margin: 0.186667rem 0 0 0.266667rem;
+  display: inline-block;
+}
+
+.pencen_top .pencen_infoC .pencent_left .penc_infoDti .nickname {
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+  color: #262628;
+  font-size: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.pencen_top .pencen_infoC .pencent_left .penc_infoDti .nickname i {
+  font-style: normal;
+  line-height: 0.586667rem;
+  color: #262628;
+  font-size: 0.4rem;
+  display: inline-block;
+  max-width: 2.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pencen_top .pencen_infoC .pencent_left .penc_infoDti .nickname span {
+  margin-left: 0.133333rem;
+  padding: 0 0.266667rem;
+  height: 0.453333rem;
+  display: inline-block;
+  border-radius: 0.053333rem;
+  background-color: #009432;
+  line-height: 0.453333rem;
+  color: #ffffff;
+  font-size: 0.293333rem;
+}
+
+.pencen_top .pencen_infoC .pencent_left .penc_infoDti .scrolline {
+  padding: 0 0.266667rem;
+  margin-top: 0.226667rem;
+  display: inline-block;
+  height: 0.453333rem;
+  border-radius: 0.213333rem;
+  background-color: #f2f2f2;
+  height: 0.426667rem;
+  line-height: 0.426667rem;
+  color: #a0a0a0;
+  font-size: 0.293333rem;
+}
+
+.pencen_top .pencen_infoC .pencent_right {
+  height: 1rem;
+  width: 3.2rem;
+  display: flex;
+  margin-top: 0.293333rem;
+  background: #0DA670;
+  background: -webkit-linear-gradient(left, #14AD86, #0DA670);
+  background: -o-linear-gradient(right, #14AD86, #0DA670);
+  background: -moz-linear-gradient(right, #14AD86, #0DA670);
+  background: linear-gradient(to right, #14AD86, #0DA670);
+  border-top-left-radius: 0.106667rem;
+  border-bottom-left-radius: 0.106667rem;
+  margin-right: -0.026667rem;
+}
+
+.pencen_top .pencen_infoC .pencent_right .vipimgC {
+  padding: 0.133333rem 0.186667rem;
+}
+
+.pencen_top .pencen_infoC .pencent_right .vipimgC img {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+
+.pencen_top .pencen_infoC .pencent_right .plusC .plustitle {
+  height: 0.533333rem;
+  line-height: 0.533333rem;
+  color: #ffffff;
+  font-size: 0.373333rem;
+}
+
+.pencen_top .pencen_infoC .pencent_right .plusC .plusintr {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  color: #ffffff;
+  font-size: 0.293333rem;
+}
+
+.pencen_menuC {
+  margin: 0 0.266667rem;
+  background-color: #fff;
+  margin-top: 0.4rem;
+  border-radius: 0.106667rem;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.pencen_menuC a {
+  width: 33.333%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.266667rem 0 0.546667rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.pencen_menuC a img {
+  width: 1.12rem;
+  height: 1.12rem;
+}
+
+.pencen_menuC a span {
+  display: block;
+  margin-top: 0.133333rem;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  color: #848484;
+  font-size: 0.346667rem;
+  text-align: center;
+}
+
+.pencen_menuC .menu_active:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0.4rem;
+  z-index: 10;
+  margin-left: 0.2rem;
+  width: 0.226667rem;
+  height: 0.226667rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #de0000;
+}
+
+.home_bottom_nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  opacity: 1;
+  bottom: 0;
+  padding-top: 0.066667rem;
+  box-sizing: border-box;
+  height: 1.333333rem;
+  box-shadow: 0 0 0.026667rem 0 rgba(125, 125, 125, 0.5);
+}
+
+.home_bottom_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home_bottom_nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home_bottom_nav ul li a img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.home_bottom_nav ul li a span {
+  width: 1.333333rem;
+  height: 0.373333rem;
+  line-height: 0.373333rem;
+  color: #b0b0b0;
+  font-size: 0.266667rem;
+}
+
+.layui-m-layerchild h3 {
+  height: 1.173333rem !important;
+  line-height: 1.173333rem !important;
+  color: #030303;
+  font-size: 0.453333rem !important;
+  font-family: PingFangSC-Medium;
+}
+
+.layui-m-layercont {
+  padding: 0.533333rem 0.8rem 0.666667rem !important;
+  line-height: 0.586667rem !important;
+  text-align: center;
+  font-size: 0.373333rem !important;
+}
+
+.layui-m-layerbtn span {
+  font-size: 0.373333rem !important;
+}
+
+.layui-m-layerbtn {
+  line-height: 1.333333rem !important;
+  height: 1.333333rem !important;
+}
+
+.layui-m-layerbtn {
+  background-color: #fff !important;
+}
+
+.layui-m-layerbtn span[yes] {
+  color: #030303 !important;
+}

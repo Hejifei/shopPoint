@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewpoint" content="width=device-width, initial-scale=1.0,viewport-fit=cover,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=no;"><title>搜索</title> -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <!--分享需要添加的样式-->
+    <link rel="stylesheet" href="../css/share.css">
+    <link rel="stylesheet" href="../css/common/jsmodern-1.1.1.min.css">
+    <!--分享需要添加的样式-->
+    <link rel="stylesheet" href="../css/tianspublic.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <!-- <script src="../js/common/fit.min.js"></script> -->
+    <script src="../js/common/base.js"></script>
+</head>
+
+<body>
+
+    <div class="find_seach_page page-current">
+        <div class="navigation">
+            <span></span>
+            <a onclick="goback()"><img src="../images/general_return.png"></a>
+            <div class="navright2"><img src="../images/general_search.png" alt="" class="search"></div>
+            <div class="navright"><img src="../images/general_search.png" alt="" class="search"></div>
+        </div>
+        <form action="">
+            <div class="find_input_box">
+                <input class="find_input_serch" type="search" id="search" maxlength="64" autocomplete="off" >
+                <a class="find_cancle" onclick="goback()">取消</a>
+            </div>
+        </form>
+        <div class="find_search_list">
+            <div class="find_search_list_item">
+                <div class="find_search_title">
+                    <span class="zn">历史搜索</span>
+                    <span class="en">search referral</span>
+                    <img id="recorddel" src="../images/main_del.png" alt="">
+                </div>
+                <div class="find_seach_content">
+                    <ul>
+                        <!-- <li>奥兰际德</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search_result">
+            <div class="graymodel"></div>
+            <div class="proOrdC">
+                <ul class="menuUl">
+                    <li>综合<span class="ordersort"></span></li>
+                    <li searchType="3">销量</li>
+                    <li searchType="4">新品</li>
+                    <li>价格<span class="ordersort"></span></li>
+                </ul>
+                <ul class="menuSonUl">
+                    <!-- <li class="menusonSel">默认排序</li>
+                <li>价格从高到低</li>
+                <li>价格从低到高</li>
+                <li>新品优先</li> -->
+                </ul>
+            </div>
+
+            <div class="prolistOutC">
+                <div class="up_refresh">
+                    <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+                    <div class="span"><span class="cn">小狮子正在奋力加载中</span><span class="en">Loading...</span></div>
+                </div>
+                <!-- 下拉刷新与上拉加载的容器 -->
+                <div class="content wrapper">
+                    <div>
+                        <!-- 下拉刷新 -->
+                        <div class="top-tip">
+                            <div class="img"><img src="../images/page_loading.gif" alt=""></div>
+                            <div class="span"><span class="cn">释放立即刷新</span><span class="en">Drop-down Refresh</span></div>
+                        </div>
+
+                        <!-- 刷新内容容器 -->
+                        <div class="prolistC indexContent">
+                            <ul></ul>
+                        </div>
+                        <!-- 上拉加载更多 -->
+                        <div class="scroll_bottom">
+                            <div><span class="cn">上拉加载更多...</span><span class="en">Loading...</span></div>
+                        </div>
+                        
+                        <div class="nomore">
+                            <span>没有更多了</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <ul> -->
+            <!-- <li>
+                <a href="./shop_detail.html">
+                    <div class="img">
+                    <img class="lazy" data-original="../images/main_sp5.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="title">天狮电动式硅胶洁面仪</div>
+                        <div class="more">
+                            <div class="price">¥ 99.00</div>
+                            <div class="discount">最高积分抵扣2%</div>
+                            <div class="add"><img data-original="../images/main_add.png" alt=""></div>
+                        </div>
+                    </div>
+                </a>
+            </li> -->
+            <!-- </ul> -->
+        </div>
+        <div class="noresult">
+            <img id="imgFix" src="../images/general_none1.png" />
+            <p class="nthword" style="text-align: center; display: none;font-size: 14px;color: #a0a0a0;">空空如也，这里什么都没有</p>
+        </div>
+
+        <div class="home_bottom_nav">
+            <ul>
+                <li>
+                    <a href="home.html">
+                        <img src="../images/main1.png" alt="">
+                        <span style="color: #009943" class="zn">优选</span>
+                        <span style="color: #009943" class="en">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="classify.html">
+                        <img src="../images/fenlei2.png" alt="">
+                        <span class="zn">分类</span>
+                        <span class="en">points mall</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="shop_car.html">
+                        <img src="../images/gwc2.png" alt="">
+                        <span class="zn">购物车</span>
+                        <span class="en">find</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="goto_person" href="person_center.html">
+                        <img src="../images/wode2.png" alt="">
+                        <span class="zn">我的</span>
+                        <span class="en">Member Center</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button id="downloadButton" style="line-height: 50px;display: none;">唤醒或下载app</button>
+    <!--浏览器分享后的提示图片-->
+    <div class="shareFlex" style="display:none">
+        <img src="../images/share_shopop.png">
+    </div> 
+    <div class="loadingC">
+        <div class="center">
+            <!-- <img src="../images/wallet_loading.png" alt="" class="bg"> -->
+            <img src="../images/wallet_load.png" alt="" class="tr">
+        </div>
+    </div>
+</body>
+<script src="../js/common/jquery-1.12.4.min.js"></script>
+<!--分享需要添加的js文件开始-->
+<script src="../js/common/jsmodern-1.1.1.min.js"></script>
+<script src="../js/common/jquery.zclip.min.js"></script>
+<!--分享需要添加的js文件结束-->
+<script src="../js/common/bscorll.js"></script>
+<script src="../js/common/swiper.min.js"></script>
+<script src="../js/common/jquery.lazyload.min.js?v=1.9.1"></script>
+<script src="../js/common/getUrlParam.js"></script>
+<script src="../js/common/md5.js"></script>
+<script src="../js/common/fastclick.min.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/layer.js"></script>
+<script src="../js/common/ajaxJS.js"></script>
+<script src="//cbe.convertlab.com/cbe/collect?tid=4580676468659034838&at=0&h=web"></script>
+<script src="../js/common/tracker_jfsc.js"></script>
+<!-- 以下为openinstall集成代码，建议在html文档中尽量靠前放置，加快初始化过程 -->
+<!-- 强烈建议直接引用下面的cdn加速链接，以得到最及时的更新，我们将持续跟踪各种主流浏览器的变化，提供最好的服务；不推荐将此js文件下载到自己的服务器-->
+<script type="text/javascript" charset="UTF-8" src="//res.cdn.openinstall.io/openinstall.js"></script>
+<script src="../js/search.js"></script>
+
+</html>
